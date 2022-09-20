@@ -4,7 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "npm run html && npm run styles"
+    "start": " start ./src/index.html",
+    "test": "editorconfig-checker",
+    "html": "html-minifier --remove-comments --collapse-whitespace --input-dir src --output-dir dist --file-ext html",
+    "styles": "postcss src/styles/index.css --use postcss-import --use postcss-csso --no-map --output dist/styles/index.css",
+    "build-html": "html-build -c config.js index.html samples/",
+    "build": "npm build-html"
   },
   "repository": {
     "type": "git",
@@ -15,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/archill11/drag-n-drop-canban/issues"
   },
-  "homepage": "https://github.com/archill11/drag-n-drop-canban#readme"
+  "homepage": "https://github.com/archill11/drag-n-drop-canban#readme",
+  "devDependencies": {
+    "html-build": "^1.0.1"
+  }
 }
