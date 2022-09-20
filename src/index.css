@@ -49,6 +49,8 @@ body {
   height: var(--item-height);
 }
 
+
+
 .board-item-content {
   pointer-events: none;
   user-select: none;
