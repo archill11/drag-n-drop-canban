@@ -1,26 +1,18 @@
 {
-  "name": "first-canban",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "private": true,
   "scripts": {
-    "start": " start ./src/index.html",
+    "start": "browser-sync start --server src --no-notify --no-ui --cwd src --files index.html,styles/**/*",
     "test": "editorconfig-checker",
     "html": "html-minifier --remove-comments --collapse-whitespace --input-dir src --output-dir dist --file-ext html",
     "styles": "postcss src/styles/index.css --use postcss-import --use postcss-csso --no-map --output dist/styles/index.css",
-    "build": "npm build-html"
+    "build": "npm run html"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/archill11/drag-n-drop-canban.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/archill11/drag-n-drop-canban/issues"
-  },
-  "homepage": "https://github.com/archill11/drag-n-drop-canban#readme",
   "devDependencies": {
-    "html-build": "^1.0.1"
+    "browser-sync": "^2.26.7",
+    "editorconfig-checker": "^3.1.0",
+    "html-minifier": "^4.0.0",
+    "postcss-cli": "^7.1.1",
+    "postcss-csso": "^4.0.0",
+    "postcss-import": "^12.0.1"
   }
 }
