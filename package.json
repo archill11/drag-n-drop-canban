@@ -1,0 +1,19 @@
+{
+  "name": "first-canban",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/archill11/drag-n-drop-canban.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/archill11/drag-n-drop-canban/issues"
+  },
+  "homepage": "https://github.com/archill11/drag-n-drop-canban#readme"
+}
